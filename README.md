@@ -1,6 +1,6 @@
 # SquareTask - Simple Todo List Website
 
-SquareTask is a straightforward todo list website designed to streamline task management. Stay organized, edit tasks on the go, move them to the completed square, and effortlessly remove tasks with ease.
+SquareTask is a straightforward todo list website designed to streamline task management. Stay organized, edit tasks on the go, move them to the completed square, and effortlessly remove tasks with ease. Your task data is saved locally, ensuring persistence even after you exit the page.
 
 ## Features
 
