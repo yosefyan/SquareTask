@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/index.js" type="module" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <title>SquareTask</title>
+    <style>
+      .tShadow {
+        text-shadow: 0 0 1rem black;
+      }
+    </style>
+  </head>
+  <body class="bg-[url('./assets/shopBG.jpg')] bg-[length:100%_100%]">
+    <div
+      class="container mx-auto p-4 lg:p-0 flex justify-center items-center flex-col lg:flex-row">
+      <div
+        class="lg:w-[40vw] h-[85vh] lg:overflow-y-auto bg-blue-900/50 flex flex-col justify-center w-full items-center">
+        <h2
+          class="flex items-center m-4 w-full justify-evenly text-5xl h-[10%] text-center text-white font-bold tracking-widest">
+          <i class="fa-solid fa-shop"></i>
+          SquareTask
+        </h2>
+        <div class="w-full h-[80vh] rounded-lg bg-stone-600/50 overflow-y-auto">
+          <ul id="itemList" class="w-full h-fit p-4 gap-3 overflow-y-auto"></ul>
+          <p id="preItem" class="text-gray-100/50 p-4"></p>
+        </div>
+      </div>
+      <div
+        class="lg:w-[60vw] h-[90vh] flex justify-center items-start flex-col min-h-screen rounded-lg mt-4 lg:mt-0">
+        <form
+          id="theForm"
+          class="h-full addingContainer bg-blue-500/50 flex flex-col lg:flex-row justify-center items-center w-full h-[25%] lg:h-[25vh] lg:w-full">
+          <div class="flex justify-center flex-col w-full lg:w-full p-4">
+            <label
+              class="lg:text-left text-center text-3xl p-2 font-bold text-blue-100 tShadow"
+              >Add a new item</label
+            >
+            <input
+              placeholder="Add a new item..."
+              id="theInput"
+              class="text-white lg:text-left text-center bg-blue-600/25 p-3 placeholder:text-black/75 placeholder:font-bold border-b-cyan-500/75 w-full text-4xl"
+              type="text" />
+          </div>
+          <div
+            class="flex justify-center items-center w-full lg:w-[20%] lg:h-full items-end mt-4 lg:mt-0">
+            <input
+              class="bg-green-500/75 lg:h-[80%] w-[80%] p-3 text-2xl cursor-pointer font-bold tracking-widest text-blue-100"
+              type="submit"
+              value="ADD" />
+          </div>
+        </form>
+        <div
+          class="rounded-lg bg-green-500/25 flex flex-col items-center w-full h-[75vh] lg:h-[60%]">
+          <h1 class="text-center text-white font-bold text-4xl my-5">
+            COMPLETED
+          </h1>
+          <div
+            id="completedContainer"
+            class="overflow-y-auto itemList w-full h-[50vh] lg:w-[90%] bg-stone-600/50 rounded-lg"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
