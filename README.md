@@ -14,7 +14,7 @@ SquareTask is a straightforward todo list website designed to streamline task ma
 
 ## Getting Started
 
-1. Access SquareTask at [https://yosefyan.github.io/squaretask](https://yosefyan.github.io/squaretask).
+1. Access SquareTask at [SquareTask](https://yosefyan.github.io/squaretask).
 
 2. Start by adding tasks using the input field.
 
